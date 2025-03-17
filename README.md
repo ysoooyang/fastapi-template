@@ -22,11 +22,6 @@
 - API 文档自动生成
 - 数据库迁移（使用 alembic）
 
-计划中功能：
-- 自动回复规则管理
-- 消息处理系统
-- 数据分析和报告
-
 ## 技术栈
 
 - 后端框架：FastAPI 0.115.8
@@ -211,7 +206,7 @@ async def get_user(user_id: int):
   ```http
   POST /api/v1/auth/register
   Content-Type: application/json
-
+  
   {
     "email": "user@example.com",
     "username": "username",
@@ -224,7 +219,7 @@ async def get_user(user_id: int):
   ```http
   POST /api/v1/auth/login
   Content-Type: application/x-www-form-urlencoded
-
+  
   username=user@example.com&password=password
   ```
 
